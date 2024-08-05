@@ -75,7 +75,7 @@ export const MapProvider = ( {children}:Props) => {
                     end: end.join(',')
                 }
             })
-             console.log(resp.data.features);
+            console.log(resp.data.features);
             const { distance,duration } = resp.data.features[0].properties.summary // destructuramos la distancia y la duracion
             const { coordinates: coords } = resp.data.features[0].geometry // destructuramos las coordenadas y las guardamos en coords
             console.log(distance,duration,coords);
